@@ -5,5 +5,4 @@
 go install  golang.org/x/tools/cmd/present 
 cd /path/to/go.slide
 present
-test
 ```    
