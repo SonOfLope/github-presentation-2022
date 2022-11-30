@@ -1,0 +1,97 @@
+Introduction à Github et le workflow de CEDILLE
+30 Novembre  2022
+
+Présenté par Jonathan Lopez
+
+* Plan de présentation
+
+1. Introduction au source control
+2. Introduction à Git
+3. Introduction à Github
+4. Workflow de CEDILLE
+
+* 1. Introduction au source control
+
+- Développé en 2005 par Linus Torvalds, git est un système de contrôle de version Open Source 
+- Permet de gérer des fichiers et des repertoires
+- Garde une trace dans le temps
+- Permet de revenir sur une ancienne version
+
+: utilise checksum pour vérifier l'intégrité des fichiers. Un checksum est une valeur qui représente le nombre de bits dans la transmission d'un message. Chaque morceau de données/fichier est assigné une valeur checksum lorsque transmission. Dans un checksum git, la transmission inclus des données méta tel que l'auteur, la date et une référence vers le dernier commit.
+
+.image img/cvcss.png 300 300 
+
+* Version control de git
+
+- Fonctionne sans internet
+- Les développeurs peuvent travailler indépendamment et joindre leur travail par la suite
+- Git fait un suivi des changements et non des versions
+
+* Installation de Git
+
+.link https://git-scm.com/book/en/v2/Getting-Started-Installing-Git
+
+.image img/git-logo.png 
+
+* 2. Introduction à Git
+
+.image img/stage-architecture-git.png
+
+* Utilisation 
+ 
+$ git init 
+
+$ git add .
+
+$ git commit -m "initial commit"
+
+- Explique au present ce que le commit représente
+
+$ git log
+
+$ git status 
+
+$ git diff 
+
+$ git checkout 
+
+* Pointeur HEAD
+
+- nouveau commit -> pointeur mis à jour vers le tip de la branche
+
+.image img/head-pointer.png
+
+* Autre commande utile 
+
+$ git reset HEAD test.txt
+
+$ git branch
+
+$ git diff branch..second_branch
+
+$ git merge --> nope
+
+$ git push [-u] origin main
+
+* 3. Introduction à Github
+
+- Une platforme qui host les repository de code git
+- Nous permet de collaborer sur des projets
+
+.image img/GitHub-logo.png 400 700
+
+* Copier un repo 
+
+$ git clone URL [new_dir_name(optional)]
+
+- On peut link un repo local vers un remote repo
+$git remote add <alias> <url>
+
+- Voir tu est lier a quel repo
+$ git remote
+
+- Tagging : pointeur vers un commit specifique
+$ git tag tag_name
+$ git show tag_name
+
+* Workflow de CEDILLE 
