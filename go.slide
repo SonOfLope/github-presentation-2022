@@ -1,5 +1,5 @@
-Introduction à Github et le workflow de CEDILLE
-30 Novembre  2022
+Introduction à Git et Github
+30 Novembre 2022
 
 Présenté par Jonathan Lopez
 
@@ -39,20 +39,27 @@ Présenté par Jonathan Lopez
 
 * Utilisation 
  
+# Initialiser un repo Git
 $ git init 
 
+# Ajouté le contenu du working directory au staging area
 $ git add .
 
+# Snapshot du projet avec le contenu qui eset dans le staging area
 $ git commit -m "initial commit"
 
-- Explique au present ce que le commit représente
+* Utilisation
 
+# Illustrer les derniers commits 
 $ git log
 
+# Illustrer le status des modifications du repo git
 $ git status 
 
+# illustrer la différence entre 2 paramètres
 $ git diff 
 
+# Changer de branche
 $ git checkout 
 
 * Pointeur HEAD
@@ -63,13 +70,16 @@ $ git checkout
 
 * Autre commande utile 
 
+# Déplacer le pointeur vers un commit désiré
 $ git reset HEAD test.txt
 
+# Illustrer les branches du repo git
 $ git branch
 
+# Illustrer les changements entre deux branches
 $ git diff branch..second_branch
 
-$ git merge --> nope
+$ git merge
 
 $ git push [-u] origin main
 
@@ -84,14 +94,12 @@ $ git push [-u] origin main
 
 $ git clone URL [new_dir_name(optional)]
 
-- On peut link un repo local vers un remote repo
-$git remote add <alias> <url>
+# On peut link un repo local vers un remote repo
+$ git remote add <alias> <url>
 
-- Voir tu est lier a quel repo
+# Voir le repo local est lié à quel remote repo
 $ git remote
 
 - Tagging : pointeur vers un commit specifique
 $ git tag tag_name
 $ git show tag_name
-
-* Workflow de CEDILLE 
